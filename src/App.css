@@ -1,0 +1,229 @@
+body{
+  margin: 0;
+  font-family: "Open Sans", "Helvetica";
+}
+
+.app{
+  position: absolute;
+  background: radial-gradient(rgb(55, 73, 130), rgb(30, 41, 72));
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2{
+  text-align: center;
+  font-family: "Open Sans", "Helvetica";
+  margin: .5em auto;
+}
+
+h1{
+  font-weight: 800;
+  color: white;
+}
+
+h1.earth{
+  font-size: 6em;
+  margin-bottom: 0;
+}
+
+h1.earth:empty  {
+  display: none;
+}
+
+h2{
+  font-weight: 300;
+  color: #2dcc70;
+  font-size: .9em;
+  width: 85%;
+}
+
+.intro p{
+  font-weight: 400;
+  font-size: .6em;
+  width: 60%;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica";
+  width: 80%;
+  margin: 0 auto;
+  color: rgb(104, 172, 250);
+  font-weight: 200;
+}
+
+.app .intro{
+  justify-content: center;
+  align-items: center;
+}
+
+.intro .start-button{
+  display: block;
+  margin: 2em auto;
+  border: 1px solid white;
+  background: none;
+  border-radius: .3em;
+  padding: .5em 1em;
+  color: white;
+  font-size: .8em;
+}
+
+.blinking{
+  animation: 2s infinite ease-in-out blink;
+}
+
+@keyframes blink{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.feed{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.feed #webcam-frame{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+video{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.classification-content{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  background:rgb(45,204,112, 0.6);
+  padding: 1em 0;
+}
+
+#guess-button{
+  background: none;
+  border: 2px solid white;
+  border-radius: .3em;
+  padding: 1em 2em;
+  color: white;
+  font-size: 14px;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+#confirmation-buttons{
+  display: none;
+  width: fit-content;
+  margin: 0 auto 0 auto;
+}
+
+#yes, #no, #next{
+  border-radius: .3em;
+  padding: 1em 2em;
+  background: none;
+  border: 2px solid #2dcc70;
+  font-weight: 400;
+  color: #2dcc70;
+  width: fit-content;
+}
+
+#yes{
+  margin-right: 1em;
+}
+
+#result, #recycling-classification{
+  font-family: "Open Sans", "Helvetica";
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  color: white;
+}
+
+#recycling-classification{
+  font-size: 20px;
+}
+
+#result{
+  padding: 0 1em 1em 1em;
+}
+
+#result:empty{
+  display: none;
+}
+
+#next{
+  display: none;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+@media(min-width:600px){
+  h1{
+    font-size: 2em;
+  }
+
+  h2{
+    font-size: 1em;
+    width: 70%;
+  }
+
+  .intro p{
+    font-size: .8em;
+  }
+
+  .intro .start-button{
+    font-size: .8em;
+  }
+}
+
+@media(min-width:800px){
+  h1{
+    font-size: 3em;
+  }
+
+  h2{
+    font-size: 1.3em;
+    width: 100%;
+  }
+
+  .intro p{
+    font-size: .9em;
+  }
+
+  .intro .start-button{
+    font-size: 1em;
+  }
+
+  #guess-button{
+    font-size: 20px;
+  }
+
+  #result, #recycling-classification{
+    font-size: 20px;
+  }
+
+  #yes, #no, #next{
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "IntelliBin",
+  "version": "0.0.1",
+  "description": "Reclare cu machine learning",
+  "author": "Iamandi Radu",
+  "license": "GNU",
+  "private": false,
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server",
+    "clean": "rm -rf public/bundle.js",
+    "clean-all": "rm -rf public/bundle.js node_modules",
+    "now-build": "yarn build"
+  },
+  "dependencies": {
+    "@tensorflow-models/coco-ssd": "^0.1.1",
+    "@tensorflow-models/mobilenet": "^0.2.2",
+    "@tensorflow/tfjs": "0.15.3",
+    "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.11",
+    "style-loader": "^0.23.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^2.1.0",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*"
+  }
+}
