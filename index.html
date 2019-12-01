@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>IntelliBin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,800" rel="preload">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,800"
+      rel="preload"
+    />
+    <link rel="shortcut icon" type="image/png" href="./ icon.png" />
   </head>
   <body>
     <main class="app">
@@ -17,10 +21,19 @@
       </section>
       <section class="feed">
         <div id="webcam-frame">
-          <video id="webcam" width="224" height="224" autoplay playsinline muted></video>
+          <video
+            id="webcam"
+            width="224"
+            height="224"
+            autoplay
+            playsinline
+            muted
+          ></video>
         </div>
         <section class="classification-content">
-          <button id="guess-button" class="blinking">Se initializeaza...</button>
+          <button id="guess-button" class="blinking">
+            Se initializeaza...
+          </button>
           <div id="result"></div>
           <div id="confirmation-buttons">
             <button id="yes">Da</button>

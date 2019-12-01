@@ -5,7 +5,7 @@ body{
 
 .app{
   position: absolute;
-  background: radial-gradient(rgb(55, 73, 130), rgb(30, 41, 72));
+  background: radial-gradient(rgb(55, 130, 58), rgb(30, 72, 38));
   width: 100%;
   height: 100%;
   margin: 0;
@@ -36,7 +36,7 @@ h1.earth:empty  {
 
 h2{
   font-weight: 300;
-  color: #2dcc70;
+  color: #91e3b3;
   font-size: .9em;
   width: 85%;
 }
@@ -49,7 +49,7 @@ h2{
   font-family: "Open Sans", "Helvetica";
   width: 80%;
   margin: 0 auto;
-  color: rgb(104, 172, 250);
+  color: #91e3b3;
   font-weight: 200;
 }
 
